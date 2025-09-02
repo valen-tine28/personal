@@ -6,6 +6,7 @@
         <title>My Personal Website</title>
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="script.js" defer></script>
     </head>
 <body>
@@ -18,7 +19,11 @@
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="theme-toggle-li">
+                <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Theme"><i class="material-icons">brightness_2</i></button>
+            </li>
         </ul>
+        <!-- Removed the standalone theme toggle button outside the ul -->
     </nav>
     </header>
 
@@ -71,7 +76,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 My Personal Website. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> My Personal Website. All rights reserved.</p>
     </footer>
 </body>
 </html>
