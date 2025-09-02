@@ -1,7 +1,7 @@
 # Personal Website Project
 
 ## Overview
-This is a personal website project built with HTML, CSS, and JavaScript. It features a responsive design with sections for home, about, portfolio, and contact. The site includes a light and dark mode toggle for better user experience.
+This is a personal website project built with HTML, CSS, and JavaScript. It features a responsive design with sections for home, about, portfolio, and contact. The site includes a light and dark mode toggle for better user experience. For detailed information about the light/dark mode feature, see README.md.
 
 ## Technologies Used
 - **HTML5**: For structuring the web pages.
@@ -10,7 +10,7 @@ This is a personal website project built with HTML, CSS, and JavaScript. It feat
 
 ## Libraries and Dependencies
 - **Font Awesome**: Used for icons in the contact section and navigation.
-- **Material Icons**: Used for the theme toggle button (sun/moon icons).
+- **Feather Icons**: Used for the theme toggle button (moon/sun icons).
 - **Google Fonts**: For custom fonts (not explicitly linked in the code, but can be added).
 
 ## Project Structure
@@ -56,7 +56,7 @@ If you have Node.js installed and want to use a local server:
 
 3. **Theme Toggle Feature**:
    - Defined CSS variables for light and dark themes.
-   - Added theme toggle button with Material Icons.
+   - Added theme toggle button with Feather Icons.
    - Implemented JavaScript to toggle classes and save preference.
 
 4. **Styling and Animations**:
@@ -86,6 +86,16 @@ If you'd like to contribute:
 
 ## License
 This project is licensed under the ISC License.
+
+## Recent Updates
+- Updated dependencies to reflect actual icon libraries used (Feather Icons for theme toggle).
+- Added reference to README.md for detailed light/dark mode documentation.
+
+## Future Enhancements
+- Add more interactive elements, such as a contact form with validation.
+- Implement a blog section for articles or updates.
+- Optimize images and assets for better performance.
+- Add accessibility features like ARIA labels and keyboard navigation.
 
 ## Notes
 - The site is static and does not require a backend.

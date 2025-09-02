@@ -15,15 +15,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const body = document.body;
     const icon = themeToggle.querySelector('i');
 
+    // Initialize feather icons
+    feather.replace();
+
     // Function to apply theme
     function applyTheme(theme) {
         if (theme === 'dark') {
             body.classList.add('dark-theme');
-            icon.textContent = 'brightness_2'; // Moon icon
+            icon.setAttribute('data-feather', 'moon');
         } else {
             body.classList.remove('dark-theme');
-            icon.textContent = 'wb_sunny'; // Sun icon
+            icon.setAttribute('data-feather', 'sun');
         }
+        feather.replace();
     }
 
     // Load saved theme

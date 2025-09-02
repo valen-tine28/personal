@@ -11,6 +11,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "feather-icons": "^4.29.2"
   }
 }
