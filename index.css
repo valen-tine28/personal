@@ -592,7 +592,7 @@ footer {
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 600px) {
     body {
-        padding-top: 60px;
+        padding-top: 0;
     }
 
     nav ul {
