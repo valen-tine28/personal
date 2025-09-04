@@ -56,39 +56,39 @@ themeToggle.addEventListener('click', function () {
 //         modal.style.display = 'block';
 //     });
 
-    // Close modal
-    closeBtn.addEventListener('click', function () {
-        modal.style.display = 'none';
-    });
+//     // Close modal
+//     closeBtn.addEventListener('click', function () {
+//         modal.style.display = 'none';
+//     });
 
-    // Close modal when clicking outside
-    window.addEventListener('click', function (event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
+//     // Close modal when clicking outside
+//     window.addEventListener('click', function (event) {
+//         if (event.target === modal) {
+//             modal.style.display = 'none';
+//         }
+//     });
 
-    // Handle form submission
-    feedbackForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const message = document.getElementById('feedback-message').value;
-        if (message.trim()) {
-            // Send email using EmailJS
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-                message: message
-            })
-            .then(function(response) {
-                alert('Thank you for your feedback! We appreciate your input.');
-                modal.style.display = 'none';
-                feedbackForm.reset();
-            }, function(error) {
-                alert('Failed to send feedback. Please try again later.');
-                console.error('EmailJS error:', error);
-            });
-        } else {
-            alert('Please enter a message.');
-        }
-    });
-} else {
-    console.error('One or more feedback modal elements not found in the DOM.');
-}
+//     // Handle form submission
+//     feedbackForm.addEventListener('submit', function (event) {
+//         event.preventDefault();
+//         const message = document.getElementById('feedback-message').value;
+//         if (message.trim()) {
+//             // Send email using EmailJS
+//             // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+//             //     message: message
+//             // })
+//             // .then(function(response) {
+//             //     alert('Thank you for your feedback! We appreciate your input.');
+//             //     modal.style.display = 'none';
+//             //     feedbackForm.reset();
+//             // }, function(error) {
+//             //     alert('Failed to send feedback. Please try again later.');
+//             //     console.error('EmailJS error:', error);
+//             // });
+//         } else {
+//             alert('Please enter a message.');
+//         }
+//     });
+// } else {
+//     console.error('One or more feedback modal elements not found in the DOM.');
+// }
