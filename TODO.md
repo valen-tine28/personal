@@ -1,7 +1,5 @@
-# TODO: Add Feedback Popup
+# TODO: Add changes to GitHub
 
-- [x] Add feedback button in footer of index.html
-- [x] Add modal HTML structure in index.html
-- [x] Add modal styles in index.css
-- [x] Add modal JS functionality in script.js
-- [ ] Test popup in browser
+- [x] Stage modified files (README.md, index.css, index.html)
+- [x] Commit changes with message "Implement light and dark mode toggle feature"
+- [x] Push to origin main branch
